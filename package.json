@@ -1,0 +1,26 @@
+{
+  "name": "floaty",
+  "version": "1.0.0",
+  "description": "A floating always-on-top browser window",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "build:win": "electron-builder --win --x64"
+  },
+  "build": {
+    "appId": "com.yourname.floaty",
+    "productName": "Floaty",
+    "defaultArch": "x64",
+    "mac": {
+      "category": "public.app-category.utilities"
+    },
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "devDependencies": {
+    "electron": "^29.0.0",
+    "electron-builder": "^24.0.0"
+  }
+}
